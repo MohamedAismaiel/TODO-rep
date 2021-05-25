@@ -1,0 +1,18 @@
+.layout {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 70rem 1fr;
+  grid-template-rows: 40vh min-content min-content 1fr;
+  &-dark {
+    background-color: var(--Very-Dark-Blue);
+    transition: var(--transition);
+  }
+  &-light {
+    background-color: var(--Very-Light-Gray);
+    transition: var(--transition);
+  }
+}
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}

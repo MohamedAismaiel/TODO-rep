@@ -1,0 +1,16 @@
+.background {
+  height: 40rem;
+  background-position: center;
+  background-size: cover;
+
+  grid-column: 1/-1;
+  grid-row: 1/1;
+  &-dark {
+    background-image: url("../images/bg-desktop-dark.jpg");
+    transition: var(--transition);
+  }
+  &-light {
+    background-image: url("../images/bg-desktop-light.jpg");
+    transition: var(--transition);
+  }
+}

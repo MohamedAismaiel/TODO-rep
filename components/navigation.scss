@@ -1,0 +1,127 @@
+.navbar {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  height: auto;
+  // transform: translateY(-3.5rem);
+  .nav {
+    color: white;
+    font-size: 1.4rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px rgba(black, 0.08);
+    &-dark {
+      transition: var(--transition);
+    }
+    &-light {
+      background-color: white;
+      transition: var(--transition);
+    }
+    .left-items {
+      color: var(--Dark-Gray-sh-Blue);
+    }
+
+    &-actions {
+      display: flex;
+
+      &-all {
+        &-dark {
+          a {
+            color: var(--Dark-Gray-sh-Blue) !important;
+          }
+          a:hover {
+            color: white !important;
+          }
+        }
+        &-light {
+          a {
+            color: var(--Dark-Gray-sh-Blue) !important;
+          }
+          a:hover {
+            color: black !important;
+          }
+        }
+
+        &-active {
+          a {
+            color: var(--color-primary) !important;
+          }
+        }
+      }
+      &-active {
+        margin: 0 2rem;
+        &-dark {
+          a {
+            color: var(--Dark-Gray-sh-Blue) !important;
+          }
+          a:hover {
+            color: white !important;
+          }
+        }
+        &-light {
+          a {
+            color: var(--Dark-Gray-sh-Blue) !important;
+          }
+          a:hover {
+            color: black !important;
+          }
+        }
+
+        &-active {
+          a {
+            color: var(--color-primary) !important;
+          }
+        }
+      }
+      &-completed {
+        &-dark {
+          a {
+            color: var(--Dark-Gray-sh-Blue) !important;
+          }
+          a:hover {
+            color: white !important;
+          }
+        }
+        &-light {
+          a {
+            color: var(--Dark-Gray-sh-Blue) !important;
+          }
+          a:hover {
+            color: black !important;
+          }
+        }
+
+        &-active {
+          a {
+            color: var(--color-primary) !important;
+          }
+        }
+      }
+    }
+
+    &-btn {
+      font-size: 1.4rem;
+      background-color: transparent;
+      color: var(--Dark-Gray-sh-Blue);
+      border: none;
+      cursor: pointer;
+      transition: color 0.2s;
+      &-dark {
+        &:hover {
+          color: white;
+        }
+      }
+      &-light {
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+}
