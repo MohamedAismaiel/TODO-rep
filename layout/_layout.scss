@@ -1,10 +1,13 @@
 .layout {
   min-height: 100vh;
-
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 70rem 1fr;
+  grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 70rem) minmax(
+      2rem,
+      1fr
+    );
   grid-template-rows: 40vh min-content min-content 1fr;
+  min-width: 100vw;
   &-dark {
     background-color: var(--Very-Dark-Blue);
     transition: var(--transition);
