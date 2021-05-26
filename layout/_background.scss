@@ -1,15 +1,15 @@
 .background {
-  background-position: center;
   background-size: cover;
   grid-column: 1/-1;
   grid-row: 1/1;
   &-dark {
     background-image: url("../images/bg-desktop-dark.jpg");
     transition: var(--transition);
-    height: 120%;
+    height: 110%;
   }
   &-light {
     // transform: translateY(1rem);
+    background-position: center;
     height: 110%;
     background-image: url("../images/bg-desktop-light.jpg");
     transition: var(--transition);
