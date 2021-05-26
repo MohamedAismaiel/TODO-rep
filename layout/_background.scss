@@ -9,8 +9,7 @@
     background-image: url("../bg-desktop-dark.jpg");
     transition: var(--transition);
     @media only screen and (max-width: 400px) {
-      // background-image: url("../bg-mobile-dark.jpg");
-      background-image: url("../bg-mobile-light.jpg");
+      background-image: url("../bg-mobile-dark.jpg");
     }
   }
   &-light {

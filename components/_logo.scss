@@ -33,7 +33,8 @@
       transition: var(--transition);
     }
     &-moon {
-      background-image: url("../icon-moon.svg");
+      background-image: url("../icon-sun.svg");
+      // background-image: url("../icon-moon.svg");
       transform: scale(0.9);
       transition: var(--transition);
     }
