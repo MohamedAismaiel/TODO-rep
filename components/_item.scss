@@ -44,7 +44,7 @@
   }
   &-form:hover {
     .icon-cross {
-      background-image: url("../images/icon-cross.svg");
+      background-image: url("../icon-cross.svg");
       background-size: cover;
       background-position: center;
       background-color: transparent;
@@ -104,7 +104,7 @@
   }
   .checkmarkCompleted {
     transition: all 0.2s;
-    background: url("../images/icon-check.svg") no-repeat center,
+    background: url("../icon-check.svg") no-repeat center,
       linear-gradient(rgb(87, 221, 255), rgb(192, 88, 243));
     background-size: 1.5rem;
   }
