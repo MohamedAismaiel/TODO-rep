@@ -4,14 +4,16 @@
   grid-row: 1/1;
 
   &-dark {
+    background-position: center;
+    height: 110%;
     background-image: url("../images/bg-desktop-dark.jpg");
     transition: var(--transition);
-    height: 110%;
-    background-position: center;
   }
   &-light {
+    background-position: center;
+
+    height: 110%;
     background-image: url("../images/bg-desktop-light.jpg");
     transition: var(--transition);
-    height: 110%;
   }
 }
