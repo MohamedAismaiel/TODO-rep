@@ -19,10 +19,11 @@ const ItemProvider = (props) => {
     localStorage.setItem("items", JSON.stringify(item));
   };
 
-  // useEffect(() => {
-  //   const items = JSON.parse(localStorage.getItem("items"));
-  //   setItemText(items);
-  // }, []);
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("items"));
+    if (!items) return;
+    setItemText(items);
+  }, []);
 
   const setText = (text, id, isCompleted = false) => {
     setItemText((curItems) => {
