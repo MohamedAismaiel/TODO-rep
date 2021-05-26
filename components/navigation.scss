@@ -9,7 +9,9 @@
     padding: 2rem;
     display: flex;
     justify-content: space-between;
+
     box-shadow: 0px 3px 5px rgba(black, 0.08);
+
     &-dark {
       transition: var(--transition);
     }
@@ -19,10 +21,12 @@
     }
     .left-items {
       color: var(--Dark-Gray-sh-Blue);
+      align-self: center;
     }
 
     &-actions {
       display: flex;
+      align-self: center;
 
       &-all {
         &-dark {

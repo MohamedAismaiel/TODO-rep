@@ -6,6 +6,9 @@
   align-items: center;
   position: relative;
   margin-bottom: 5rem;
+  @media only screen and (max-width: 400px) {
+    margin-bottom: 8rem;
+  }
 
   .todo {
     display: inline-block;
