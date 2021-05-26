@@ -79,3 +79,30 @@ li {
   color: var(--Dark-Gray-sh-Blue);
   opacity: 0.8;
 }
+
+.attribution {
+  grid-column: 2/3;
+  grid-row: 5/5;
+  justify-self: center;
+  align-self: flex-end;
+  margin-bottom: 3rem;
+  a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  &-light {
+    a {
+      transition: var(--transition);
+      color: black;
+      border-bottom: 1px solid black;
+    }
+  }
+  &-dark {
+    a {
+      transition: var(--transition);
+      color: white;
+      border-bottom: 1px solid white;
+    }
+  }
+}

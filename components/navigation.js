@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useContext } from "react";
+import { Fragment, useContext } from "react";
 import { ItemContext } from "./context/itemContext";
 import { useRouter } from "next/router";
 const Navigation = () => {
@@ -33,28 +33,55 @@ const Navigation = () => {
     : "nav-actions-all-dark nav-actions-all";
 
   const btnMode = modectx ? " nav-btn nav-btn-light" : "nav-btn nav-btn-dark";
+
+  const classes = modectx
+    ? "attribution attribution-light"
+    : "attribution attribution-dark";
   return (
-    <section className="navbar">
-      <ul className={navClass}>
-        <li className="left-items">{`${leftItems.length} Items left`}</li>
-        <div className="nav-actions">
-          <li className={`${AllClasses} ${allMode}`}>
-            <Link href="/">All</Link>
+    <Fragment>
+      <section className="navbar">
+        <ul className={navClass}>
+          <li className="left-items">{`${leftItems.length} Items left`}</li>
+          <div className="nav-actions">
+            <li className={`${AllClasses} ${allMode}`}>
+              <Link href="/">All</Link>
+            </li>
+            <li className={`${ActiveClasses} ${activeMode}`}>
+              <Link href="/active"> Active</Link>
+            </li>
+            <li className={`${CompletedClasses} ${compMode}`}>
+              <Link href="/completed">Completed</Link>
+            </li>
+          </div>
+          <li>
+            <button onClick={clearCompletedhandler} className={btnMode}>
+              Clear Completed
+            </button>
           </li>
-          <li className={`${ActiveClasses} ${activeMode}`}>
-            <Link href="/active"> Active</Link>
-          </li>
-          <li className={`${CompletedClasses} ${compMode}`}>
-            <Link href="/completed">Completed</Link>
-          </li>
-        </div>
-        <li>
-          <button onClick={clearCompletedhandler} className={btnMode}>
-            Clear Completed
-          </button>
-        </li>
-      </ul>
-    </section>
+        </ul>
+      </section>
+      <div className={classes}>
+        Challenge by&nbsp;
+        <a
+          className="link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by
+        <a
+          className="link"
+          href="https://www.facebook.com/profile.php?id=1196972374"
+          target="_blank"
+          rel="noreferrer"
+        >
+          &nbsp;Mohamed A.Ismaiel
+        </a>
+        .
+      </div>
+    </Fragment>
   );
 };
 export default Navigation;

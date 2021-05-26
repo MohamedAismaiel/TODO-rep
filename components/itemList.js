@@ -7,7 +7,6 @@ const ItemList = (props) => {
   const itemctx = useContext(ItemContext).items;
   const Orderctx = useContext(ItemContext).orderItems;
   resetServerContext();
-
   const isCompleted = useContext(ItemContext).itemCompleted;
   const removeTex = useContext(ItemContext).removeText;
   const itemIsCompleted = useContext(ItemContext).toggleIsCompleted;

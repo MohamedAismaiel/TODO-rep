@@ -5,7 +5,8 @@ import Background from "../layout/background";
 import Logo from "../components/logo";
 import NewList from "../components/newList";
 import Item from "../components/item";
-import ItemProvider from "../components/context/itemContext";
+import ItemProvider, { ItemContext } from "../components/context/itemContext";
+import { useContext } from "react";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,7 +16,6 @@ function MyApp({ Component, pageProps }) {
         <Logo />
         <NewList />
         <Navigation />
-
         <Component {...pageProps} />
       </Layout>
     </ItemProvider>

@@ -6,7 +6,7 @@
       2rem,
       1fr
     );
-  grid-template-rows: 40vh min-content min-content 1fr;
+  grid-template-rows: 40vh min-content min-content min-content 1fr;
   min-width: 100vw;
   &-dark {
     background-color: var(--Very-Dark-Blue);
