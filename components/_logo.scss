@@ -29,7 +29,7 @@
 
     &-sun {
       background-image: url("../images/icon-sun.svg");
-      transform: scale(0.9) rotate(180deg);
+      transform: scale(0.9);
       transition: var(--transition);
     }
     &-moon {
