@@ -5,7 +5,8 @@ import { useRouter } from "next/router";
 const Navigation = () => {
   const items = useContext(ItemContext).items;
   const clearComp = useContext(ItemContext).clearCompleted;
-  const leftItems = items.filter((i) => i.isCompleted === false);
+  const leftItems = 0;
+  // const leftItems = items.filter((i) => i.isCompleted === false);
   const clearCompletedhandler = () => {
     clearComp();
   };
@@ -35,7 +36,7 @@ const Navigation = () => {
   return (
     <section className="navbar">
       <ul className={navClass}>
-        <li className="left-items">{`${leftItems.length} Items left`}</li>
+        <li className="left-items">{`${leftItems} Items left`}</li>
         <div className="nav-actions">
           <li className={`${AllClasses} ${allMode}`}>
             <Link href="/">All</Link>
