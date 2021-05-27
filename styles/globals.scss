@@ -90,6 +90,10 @@ li {
     text-decoration: none;
     color: black;
     border-bottom: 1px solid black;
+    @media only screen and (max-width: 680px) {
+      font-size: 1.1rem;
+      text-align: center;
+    }
   }
   &-light {
     a {
